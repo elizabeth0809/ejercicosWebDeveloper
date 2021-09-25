@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Flexbox Demo Menús</title>
+    <meta name="description" content="Flexbox demo completo por Alexander García de Oja.la"/>
+                
+    <link rel="stylesheet" href="style-menus.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+</head>
+    
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+
+    <header class="masthead clear">
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title">Flexbox Demo: Menús</h1>
+            </div><!-- .site-title -->
+        </div><!-- .centered -->
+    </header><!-- .masthead -->
+    
+    <main class="main-area">
+        
+        <div class="centered">
+            
+            <section class="menu-section"> 
+                <h2 class="menu-heading">Menú de nivel simple</h2>
+                <nav id="single-nav" class="single-nav menu" role="navigation">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Dieta sana</a></li>
+                        <li><a href="#">Clases</a></li>
+                        <li><a href="#">Recomendaciones</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav><!-- #single-nav .single-nav -->
+            </section><!-- menu-section -->
+
+            <section class="menu-section">
+                <h2 class="menu-heading">Menú Avanzado</h2>
+                <nav id="advanced-nav" class="advanced-nav menu" role="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="button-text">
+                                    Inicio
+                                    <span>es donde está el corazón</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-cutlery"></i>
+                                </div>
+                                <div class="button-text">
+                                    Dieta
+                                    <span>es alimento para el alma, nos fortalece el espíritu</span>
+                                </div>
+                            </a>
+                        </li>
+      
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-file-text"></i>
+                                </div>
+                                <div class="button-text">
+                                    Recomend.
+                                    <span>guía para tu viaje</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-paper-plane"></i>
+                                </div>
+                                <div class="button-text">
+                                    Noticias
+                                    <span>trae cosas nuevas</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- #advanced-nav .advanced-nav -->
+            </section><!-- .menu-section -->
+
+            <section class="menu-section">
+                <h2 class="menu-heading">Menú Multi-nivel (Drop-Down)</h2>
+                <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li class="has-children">
+                            <a href="#">Música<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Agrupaciones</a></li>
+                                <li><a href="#">Contratos</a></li>
+                                <li><a href="#">Salones de eventos</a>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Géneros<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Ballet</a></li>
+                                <li><a href="#">Breakdance</a></li>
+                                <li><a href="#">Danza árabe</a></li>
+                                <li><a href="#">Danza contemporánea</a></li>
+                                <li><a href="#">Electro Dance</a></li>
+                                <li><a href="#">Flamenco</a></li>
+                                <li><a href="#">Hip Hop</a></li>
+                                <li><a href="#">Joropo</a></li>
+                                <li><a href="#">Pop</a></li>
+                                <li><a href="#">Salsa</a></li>
+                                <li><a href="#">Tango</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Acerca de</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">La historia de la danza</a></li>
+                                <li><a href="#">Conoce los directores</a></li>
+                                <li><a href="#">Conoce los equipos</a></li>
+                                <li><a href="#">Nuestros anunciantes</a></li>
+                                <li><a href="#">Politicas de la empresa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav><!-- #multi-level-nav .multi-level-nav -->
+            </section><!-- .menu-section -->
+
+                           
+            <section class="menu-section">
+                <h2 class="menu-heading">Menú Social</h2>
+                <nav id="social-menu" class="social-menu menu" role="navigation">
+                    <ul>
+                        <li><a href="http://twitter.com/mor10"><span class="screen-reader-text">Twitter</span></a></li>
+                        <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                        <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                        <li><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                        <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                    </ul>
+                </nav><!-- .social-menu -->
+            </section><!-- .menu-section -->
+
+            <section class="menu-section">
+                <h2 class="menu-heading">Menú Mixto (drop-down &#43; social)</h2>
+                <div class="nav-mixed menu">
+                    <nav id="multi-level-nav" class="multi-level-nav" role="navigation">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li class="has-children">
+                                <a href="#">Música<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Agrupaciones</a></li>
+                                    <li><a href="#">Contratos</a></li>
+                                    <li><a href="#">Salones de eventos</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Géneros<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Ballet</a></li>
+                                    <li><a href="#">Breakdance</a></li>
+                                    <li><a href="#">Danza árabe</a></li>
+                                    <li><a href="#">Danza contemporánea</a></li>
+                                    <li><a href="#">Electro Dance</a></li>
+                                    <li><a href="#">Flamenco</a></li>
+                                    <li><a href="#">Hip Hop</a></li>
+                                    <li><a href="#">Joropo</a></li>
+                                    <li><a href="#">Pop</a></li>
+                                    <li><a href="#">Salsa</a></li>
+                                    <li><a href="#">Tango</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Acerca de</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">La historia de la danza</a></li>
+                                    <li><a href="#">Conoce los directores</a></li>
+                                    <li><a href="#">Conoce los equipos</a></li>
+                                    <li><a href="#">Nuestros anunciantes</a></li>
+                                    <li><a href="#">Politicas de la empresa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav><!-- #multi-level-nav .multi-level-nav -->
+
+                    <nav id="social-menu" class="social-menu" role="navigation">
+                        <ul>
+                            <li><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                            <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                            <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                            <li><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                            <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                        </ul>
+                    </nav><!-- .social-menu -->
+                </div><!-- .mixed-menu -->
+            </section><!-- .menu-section -->
+            
+        </div><!-- .centered -->
+        
+    </main>
+    
+    <footer class="footer-area">
+        <div class="centered">
+            
+        </div><!-- .centered -->
+    </footer>
+    
+    <script type="text/javascript" src="JS/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="JS/menu-toggle.js"></script>
+</body>
+
+</html>

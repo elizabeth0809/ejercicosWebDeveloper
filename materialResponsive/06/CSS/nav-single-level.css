@@ -1,0 +1,13 @@
+/* Estilo para el menú de nivel simple */
+@media screen and (min-width: 30em){
+	.single-nav ul{
+		display: flex;
+		flex-wrap: wrap;/*con esta propiedad es que los elementos se alinean uno debajo del otro*/
+		/*justify-content: space-around;/*sin importar el ancho de los elemtos todos tendran el mismo espacio entre si*/
+		justify-content: space-between;
+	}
+	.single-nav li{
+		flex: 1 0 auto;/*esto es para que no haya espacios, rellena esos espacios*/
+		text-align: center;/*Asi se pone el texto alineado en el centro*/
+	}
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Flexbox Demo Sitio Completo</title>
+    <meta name="description" content="Flexbox demo completo por Alexander García de Oja.la"/>
+                
+    <link rel="stylesheet" href="style-index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+</head>
+    
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+    <div class="outer-wrap">
+
+    <header class="masthead">
+        <div class="sidebar-switcher">
+            Selecciona un diseño: <a href="#" class="sidebar-left-toggle"><i class="fa fa-align-left"></i><span class="">Mover el sidebar a la izquierda</span></a> <a href="#" class="sidebar-right-toggle"><i class="fa fa-align-right"></i><span class="">Mover el sidebar a la derecha</span></a> <a href="#" class="no-sidebar-toggle"><i class="fa fa-align-justify"></i><span class="">Mover el sidebar vertical</span></a>  <a href="#" class="hide-sidebar-toggle"><i class="fa fa-arrow-circle-right"></i><span class="">Ocultar el sidebar</span></a>
+        </div><!-- .sidebar-switcher -->
+
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title">Flexbox Demo Completo Flexbox</h1>
+            </div><!-- .site-title -->
+        </div><!-- .centered -->
+        
+        <div class="nav-mixed menu">
+            <nav id="multi-level-nav" class="multi-level-nav" role="navigation">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li class="has-children">
+                        <a href="#">Música<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Agrupaciones</a></li>
+                            <li><a href="#">Contratos</a></li>
+                            <li><a href="#">Salones de eventos</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#">Géneros<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Ballet</a></li>
+                            <li><a href="#">Breakdance</a></li>
+                            <li><a href="#">Danza árabe</a></li>
+                            <li><a href="#">Danza contemporánea</a></li>
+                            <li><a href="#">Electro Dance</a></li>
+                            <li><a href="#">Flamenco</a></li>
+                            <li><a href="#">Hip Hop</a></li>
+                            <li><a href="#">Joropo</a></li>
+                            <li><a href="#">Pop</a></li>
+                            <li><a href="#">Salsa</a></li>
+                            <li><a href="#">Tango</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#">Acerca de<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expandir el menú</span></button></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">La historia de la danza</a></li>
+                            <li><a href="#">Conoce los directores</a></li>
+                            <li><a href="#">Conoce los equipos</a></li>
+                            <li><a href="#">Nuestros anunciantes</a></li>
+                            <li><a href="#">Politicas de la empresa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav><!-- #multi-level-nav .multi-level-nav -->
+
+            <nav id="social-menu" class="social-menu" role="navigation">
+                <ul>
+                    <li><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
+                    <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+                    <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+                    <li><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+                    <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+                </ul>
+            </nav><!-- .social-menu -->
+        </div><!-- .mixed-menu -->
+
+    </header><!-- .masthead -->
+    
+    <div class="content">
+        <main class="main-area">
+            <section class="cards">
+                
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/arajatabla.jpg" alt="Arajatabla Studios">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Arajatabla Studios</h2>
+                            <p>Nace en 2009, bajo la iniciativa de tres  jóvenes bailaoras, con la intensión de demostrar a plenitud la fuerza y la pasión del arte flamenco ejecutado de una manera técnica y responsable, manteniendo a través de la fusión y los movimientos tradicionales y vanguardistas la esencia que define este maravilloso arte.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/flow-dance.jpg" alt="Flow Dance">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Flow Dance</h2>
+                            <p>Fundada en el año 2010, es una escuela de aprendizaje sobre la danza y su destreza, en el área del movimiento Urbano y ritmos modernos, que se encarga de formar bailarines desde  los 4 años de edad, teniendo como Objetivo principal la alimentación de conocimientos sobre bases, técnicas, estilos, movimientos y control del Baile, nombrados en el Estado Táchira, como los Pioneros del Hip – Hop.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/puropie.jpg" alt="Puropie Danza Contemporanea">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Puropie Danza Contemporánea</h2>
+                            <p>Nace a finales de 1998, como necesidad de expresión a través de un lenguaje propio. En estos momentos los integrantes cuentan con una evidente formación en danza (clásica y contemporánea), manteniendo una permanente actualización con clases y talleres dictados por maestros de amplia trayectoria nacional e internacional, así como por su participación en diferentes eventos de carácter local, regional, nacional y mundial.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/danzas-tachira.jpg" alt="Danzas Táchira">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Danzas Táchira</h2>
+                            <p>Desde su inicio se ha caracterizado por trabajar con ahínco, esmero, dedicación y profesionalismo; proyectando la danza nacionalista entre sus alumnos, dentro de la geografía regional, nacional e internacional.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/expresion-latina.jpg" alt="Expresión Latina">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Expresión Latina</h2>
+                            <p>Inicia actividades académicas el 16 de Febrero de 2013, y ha participado en eventos donde se proyecte la cultura tachirense, tales como la Feria Internacional de San Sebastián 2013, Feria Internacional de La Cultura y Recientemente, el Día Nacional de la Salsa.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/gym-spa-armonia.jpg" alt="Gym Spa Armonía">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Gym Spa Armonía</h2>
+                            <p>Surge con la finalidad de proyectar un nuevo estilo de danza que se deriva principalmente de la danza del vientre. En ocasiones se fusiona con tendencias actuales de ritmos electrónicos.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+                <article class="card">
+                    <a href="#">
+                        <figure class="thumbnail">
+                            <img src="images/bellydanzadictas.jpg" alt="Bellydanzadictas">
+                        </figure>
+                        <div class="card-content">
+                            <h2>Bellydanzadictas</h2>
+                            <p>Agrupación de danza arabe con experiencia en el campo de formacion de bailarinas, fusiona la danza árabe con ritmos africanos y latinos. Han participado en importantes eventos. La agrupación ha continuado su formación con profesores internacionales, participando en el Seminario Angels fantasy, realizado en Caracas.</p>
+                        </div><!-- .card-content -->
+                    </a>
+                </article><!-- .card -->
+
+            </section><!-- .cards -->
+        </main>
+
+        <div class="sidebar">
+            <div class="squish-container">
+            <h3>Explora los Demos:</h3>
+            <nav class="example-menu">
+                <ul>
+                    <li><a href="menus.html">Menús Flexbox</a></li>
+                    <li><a href="card-layout.html">Tarjetas</a></li>
+                    <li><a href="holy-grail.html">Santo Grial</a></li>
+                    <li><a href="index.html">Ahora todo junto</a></li>
+                </ul>
+            </nav><!-- .example-menu -->
+            </div>
+        </div><!-- .sidebar -->
+    </div><!-- .content -->
+
+    <footer class="footer-area">
+        <p>El pie de página aparece generalmente en la parte inferior de la página. Es por eso que se llama "pie de página".</p>
+    </footer>
+
+    </div><!-- .outer-wrap -->
+
+    <script type="text/javascript" src="JS/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="JS/sidebar-switcher.js"></script>
+    <script type="text/javascript" src="JS/menu-toggle.js"></script>
+</body>
+
+</html>

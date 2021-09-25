@@ -1,0 +1,27 @@
+@mixin telefono{
+    //los $telefono y los demas son las variables definidas en el archivo de variables como los tamaños responsives
+    @media (min-width: $telefono){
+        @content;//esto va a ser que cuando le pase varias contenidos no necesariamente es el mismi puede ser variable ( se pasa el contenido en el archivo header)
+
+    }
+}
+
+
+@mixin tablet{
+    @media (min-width: $tablet){
+        @content;//esto va a ser que cuando le pase varias contenidos no necesariamente es el mismi puede ser variable ( se pasa el contenido en el archivo header)
+        
+    }
+}
+
+@mixin desktop{
+    @media (min-width: $desktop){
+        @content;//esto va a ser que cuando le pase varias contenidos no necesariamente es el mismi puede ser variable ( se pasa el contenido en el archivo header)
+        
+    }
+}
+@mixin grid($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
